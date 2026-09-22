@@ -1,0 +1,3 @@
+String cekStatusLulus(double rataRata){
+  
+}
