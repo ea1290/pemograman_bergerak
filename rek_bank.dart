@@ -42,5 +42,16 @@ class RekeningBank {
    }
 
 
+   void main(){
+    var rekening = RekeningBank("123-123-123", 500000);
+
+    print("=== Informasi Rekning ===");
+    print("No. Rekening : ${rekening._nomorRekening}");
+    print("Saldo Awal    : Rp${rekening.saldo}");
+
+    print()
+   }
+
+
 
 }
