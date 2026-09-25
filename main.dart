@@ -2,7 +2,24 @@ import 'dart:io';
 import 'kalkulator.dart';
 
 void main(){
+  while (true){
+    final number1 = readNumber('Masukkan bilangan pertama: ');
+    final number2 = readNumber('Masukkan bilangan kedua: ');
 
+    final kalkulator = Kalkulator(number1, number2);
+
+    showMenu();
+
+    final pilihan = readChoice();
+
+    calculate(kalkulator, pilihan);
+
+    if(!readAgain()){
+      print('Program selesai. Terimah kasih!');
+      break;
+    }
+  }
+}
   double readNumber(String message){
     while (true){
       stdout.write(message);
@@ -64,4 +81,3 @@ bool readAgain(){
   final input = stdin.readLineSync()?.trim().toUpperCase();
   return input == 'Y';
   }
-}
