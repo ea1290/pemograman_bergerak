@@ -14,5 +14,6 @@ class Kalkulator {
       throw Exception('Tidak dapat membagi dengan nilai nol');
     }
     return number1 / number2;
+    
   }
 }

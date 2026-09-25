@@ -80,4 +80,5 @@ bool readAgain(){
   stdout.write('\nApakah ingin melakukan perhitungan lagi? (Y/T): ');
   final input = stdin.readLineSync()?.trim().toUpperCase();
   return input == 'Y';
+  
   }
